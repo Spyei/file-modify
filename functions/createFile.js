@@ -1,11 +1,11 @@
 const fs = require("fs")
 
 function createFile(filename, content){
-    let data = content || "data"
+    let data = content || ""
     let createFile = fs.writeFile(filename, data, (err) => {
-        if (err) throw err;
-            console.log("Created file with name: " + filename)
-        })
+        let nome = filename ||"porra"
+        if(nome == "porra") return console.log("Enter the name of the file you want to create.") 
+    })
     return createFile
 }
 
