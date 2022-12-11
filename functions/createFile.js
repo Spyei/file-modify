@@ -10,5 +10,5 @@ function createFile(filename, content){
 }
 
 module.exports = {
-    createFile
+    createFile: createFile
 }
