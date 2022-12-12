@@ -16,3 +16,12 @@ exports.deleteFile = function(filename){
     })
     return deleteFile
 }
+
+exports.openFile = function(filename){
+    let nome = filename ||"porra"
+    let openfile = fs.readFile(filename, 'utf-8', function(err, data) {
+        if(nome == "porra") return console.log("Enter the name of the file you want to open.")
+        console.log(data)
+    })
+    return openfile
+}
