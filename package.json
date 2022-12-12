@@ -1,6 +1,6 @@
 {
   "name": "file-modify",
-  "version": "1.0.2",
+  "version": "1.0.0",
   "description": "A npm for modify your files easly",
   "main": "index.js",
   "scripts": {
@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/Spyei/file-modify#readme",
   "dependencies": {
-    "file-modify": "^0.0.9"
+    "file-modify": "^1.0.2"
   }
 }
