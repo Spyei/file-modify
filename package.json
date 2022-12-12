@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Spyei/file-modify/issues"
   },
-  "homepage": "https://github.com/Spyei/file-modify#readme"
+  "homepage": "https://github.com/Spyei/file-modify#readme",
+  "dependencies": {
+    "file-modify": "^0.0.9"
+  }
 }
