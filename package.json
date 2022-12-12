@@ -1,6 +1,6 @@
 {
   "name": "file-modify",
-  "version": "1.0",
+  "version": "1.0.0",
   "description": "A npm for modify your files easly",
   "main": "index.js",
   "scripts": {
