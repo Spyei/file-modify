@@ -25,3 +25,11 @@ exports.openFile = function(filename){
     })
     return openfile
 }
+
+exports.createFolder = function(foldername){
+    let nome = foldername || "porra"
+    let createfolder = fs.mkdir(foldername, (err) => {
+        if(nome == "porra") return console.log("Enter the name of the folder you want to create.")
+    })
+    return createfolder
+}
