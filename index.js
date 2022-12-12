@@ -1,6 +1,6 @@
 const fs = require("fs")
 
-function createFile(filename, content){
+exports.createFile = function(filename, content){
     let data = content || ""
     let createFile = fs.writeFile(filename, data, (err) => {
         let nome = filename ||"porra"
@@ -9,15 +9,10 @@ function createFile(filename, content){
     return createFile
 }
 
-function deleteFile(filename){
+exports.deleteFile = function(filename){
     let nome = filename || "porra"
     let deletefile = fs.unlink(filename, (err) => {
         if(nome == "porra") return console.log("Enter the name of the file you want to delete.")
     })
     return deleteFile
-}
-
-module.exports = {
-    deleteFile: deleteFile,
-    createFile: createFile
 }
